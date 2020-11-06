@@ -15,6 +15,7 @@ module.exports = {
         if (args.length === 0) {
             let fun = getCommandsInCategory(cmds, "fun");
             let knowledge = getCommandsInCategory(cmds, "knowledge");
+            let music = getCommandsInCategory(cmds, "music");
             let moderation = getCommandsInCategory(cmds, "moderation");
             let utility = getCommandsInCategory(cmds, "utility");
 
@@ -27,6 +28,7 @@ module.exports = {
                 .addFields(
                     { name: "Fun", value: fun },
                     { name: "Knowledge", value: knowledge },
+                    { name: "Music", value: music },
                     { name: "Moderation", value: moderation },
                     { name: "Utility", value: utility }
                 );

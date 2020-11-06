@@ -110,7 +110,7 @@ client.on("guildMemberAdd", async (member) => {
 
 client.on("error", (e) => console.error(e));
 client.on("warn", (e) => console.warn(e));
-client.on("debug", (e) => console.info(e));
+//client.on("debug", (e) => console.info(e));
 
 client.login(auth.token);
 
