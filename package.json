@@ -7,6 +7,7 @@
   "dependencies": {
     "ascii-art": "^2.5.0",
     "ascii-art-table": "^1.0.1",
+    "canvas": "^2.6.1",
     "cleverbot-free": "^1.0.4",
     "cube-scrambler": "^1.1.0",
     "discord.js": "^12.3.0",
