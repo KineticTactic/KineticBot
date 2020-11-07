@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const math = require("mathjs");
 const elements = require("../../data/elements.json")["elements"];
 
 module.exports = {

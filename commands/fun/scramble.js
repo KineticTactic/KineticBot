@@ -6,7 +6,7 @@ module.exports = {
     usage: "",
     args: false,
     category: "fun",
-    execute(message, args) {
+    execute(message) {
         let scramble = cubeScrambler.scramble();
         let scrambleStr = scramble.join(" ");
         message.channel.send(scrambleStr);

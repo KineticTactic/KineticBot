@@ -4,7 +4,7 @@ module.exports = {
     usage: "<code>",
     args: true,
     category: "fun",
-    execute: async (message, args) => {
+    execute: async (message) => {
         const code = message.content.slice(1).trim().substring(5);
         try {
             await eval(code);

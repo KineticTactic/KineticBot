@@ -20,8 +20,22 @@ for (const file of commandFiles) {
     client.commands.set(command.name, command);
 }
 
-client.once("ready", (evt) => {
+client.once("ready", () => {
     console.log("Ready!");
+
+    let statuses = [
+        "Yoooooooooooooooooo",
+        "Quantum Mechanics",
+        "General Relativity",
+        "nothing",
+    ];
+    setInterval(
+        () =>
+            client.user.setActivity(
+                statuses[Math.floor(Math.random() * statuses.length)]
+            ),
+        10000
+    );
 });
 
 client.on("message", (message) => {
@@ -33,9 +47,6 @@ client.on("message", (message) => {
     if (message.content.startsWith("!")) {
         const args = message.content.slice(1).trim().split(/ +/);
         const commandName = args.shift().toLowerCase();
-
-        if (commandName === "join") {
-        }
 
         if (!client.commands.has(commandName)) return;
 
@@ -88,7 +99,7 @@ client.on("guildMemberAdd", async (member) => {
 
     ctx.fillText("Welcome!", canvas.width / 2.5, canvas.height / 2.5);
 
-    ctx.fillText(message.displayName, canvas.width / 2.5, canvas.height / 1.5);
+    ctx.fillText(member.displayName, canvas.width / 2.5, canvas.height / 1.5);
 
     ctx.beginPath();
     ctx.arc(420, 540, 270, 0, Math.PI * 2, true);

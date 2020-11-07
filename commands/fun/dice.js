@@ -6,7 +6,7 @@ module.exports = {
     usage: "",
     args: false,
     category: "fun",
-    execute(message, args) {
+    execute(message) {
         let result = Math.floor(Math.random() * 6) + 1;
 
         let embed = new Discord.MessageEmbed()

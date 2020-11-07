@@ -6,12 +6,12 @@ module.exports = {
     usage: "",
     args: false,
     category: "utility",
-    execute(message, args) {
+    execute(message) {
         const text = "The quick brown fox jumps over the lazy dog";
         let startTime;
         message.channel
             .send(`Type this as fast as you can: \n \`${text}\``)
-            .then((message) => (startTime = Date.now()));
+            .then(() => (startTime = Date.now()));
 
         const collector = new Discord.MessageCollector(
             message.channel,

@@ -4,7 +4,7 @@ module.exports = {
     usage: "",
     args: false,
     category: "utility",
-    execute(message, args) {
+    execute(message) {
         message.react("✅");
     },
 };

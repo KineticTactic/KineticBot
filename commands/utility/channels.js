@@ -4,7 +4,7 @@ module.exports = {
     usage: "",
     args: false,
     category: "utility",
-    execute(message, args) {
+    execute(message) {
         message.channel.send(
             message.guild.channels.cache.filter((c) => c.type !== "category")
                 .size

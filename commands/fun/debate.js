@@ -6,7 +6,7 @@ module.exports = {
     usage: "",
     args: false,
     category: "fun",
-    execute(message, args) {
+    execute(message) {
         let index = Math.floor(Math.random() * debate.length);
         message.channel.send(debate[index]);
     },

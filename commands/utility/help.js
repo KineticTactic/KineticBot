@@ -9,7 +9,6 @@ module.exports = {
     execute(message, args) {
         const prefix = "!";
 
-        const data = [];
         const { commands } = message.client;
 
         let cmds = commands.map((command) => [command.name, command.category]);

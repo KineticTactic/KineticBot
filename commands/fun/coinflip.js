@@ -6,7 +6,7 @@ module.exports = {
     usage: "",
     args: false,
     category: "fun",
-    execute(message, args) {
+    execute(message) {
         let result = Math.random() < 0.5 ? "HEADS" : "TAILS";
         let embed = new Discord.MessageEmbed()
             .setTitle(`The result is ${result}`)

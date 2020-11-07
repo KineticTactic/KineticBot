@@ -6,7 +6,7 @@ module.exports = {
     usage: "",
     args: false,
     category: "fun",
-    execute(message, args) {
+    execute(message) {
         fetch("https://official-joke-api.appspot.com/jokes/random")
             .then((res) => res.json())
             .then((json) => {

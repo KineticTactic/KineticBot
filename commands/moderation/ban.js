@@ -4,7 +4,7 @@ module.exports = {
     usage: "<user>",
     args: true,
     category: "moderation",
-    execute(message, args) {
+    execute(message) {
         if (message.member.hasPermission("BAN_MEMBERS")) {
             try {
                 message.guild.members.ban(message.mentions.members.first());

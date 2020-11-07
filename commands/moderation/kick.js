@@ -4,7 +4,7 @@ module.exports = {
     usage: "<user>",
     args: true,
     category: "moderation",
-    execute(message, args) {
+    execute(message) {
         if (message.mentions.users.first()) {
             if (message.member.hasPermission("KICK_MEMBERS")) {
                 try {
