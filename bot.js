@@ -44,7 +44,7 @@ client.on("message", (message) => {
 
     handleRank(message, database);
 
-    if (message.content.startsWith("!")) {
+    if (message.content.startsWith("~")) {
         const args = message.content.slice(1).trim().split(/ +/);
         const commandName = args.shift().toLowerCase();
 

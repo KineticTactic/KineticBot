@@ -7,7 +7,7 @@ module.exports = {
     args: false,
     category: "utility",
     execute(message, args) {
-        const prefix = "!";
+        const prefix = "~";
 
         const { commands } = message.client;
 

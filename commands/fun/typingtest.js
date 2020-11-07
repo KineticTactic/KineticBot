@@ -5,7 +5,7 @@ module.exports = {
     description: "Typing test!",
     usage: "",
     args: false,
-    category: "utility",
+    category: "fun",
     execute(message) {
         const text = "The quick brown fox jumps over the lazy dog";
         let startTime;
