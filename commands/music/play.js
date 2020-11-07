@@ -4,6 +4,7 @@ const yts = require("yt-search");
 module.exports = {
     name: "play",
     description: "Plays music!",
+    usage: "<url or keyword>",
     args: true,
     category: "music",
     execute: async (message, args) => {

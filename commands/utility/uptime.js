@@ -1,6 +1,7 @@
 module.exports = {
     name: "uptime",
     description: "Returns the amount of time the bot has been running for",
+    usage: "",
     args: false,
     category: "utility",
     execute(message, args) {

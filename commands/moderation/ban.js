@@ -1,6 +1,7 @@
 module.exports = {
     name: "ban",
     description: "Bans the mentioned user",
+    usage: "<user>",
     args: true,
     category: "moderation",
     execute(message, args) {

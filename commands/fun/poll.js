@@ -15,6 +15,7 @@ const emojiArray = [
 module.exports = {
     name: "poll",
     description: "Starts a poll",
+    usage: "<topic>",
     args: true,
     category: "fun",
     execute(message, args) {

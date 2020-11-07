@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 module.exports = {
     name: "coinflip",
     description: "Flips a coin and returns the result",
+    usage: "",
     args: false,
     category: "fun",
     execute(message, args) {

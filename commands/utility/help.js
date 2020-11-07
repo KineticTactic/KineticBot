@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 module.exports = {
     name: "help",
     description: "List all of my commands or info about a specific command.",
+    usage: "(command)",
     args: false,
     category: "utility",
     execute(message, args) {
@@ -44,7 +45,12 @@ module.exports = {
                         name: "Description",
                         value: commands.get(args[0]).description,
                     },
-                    { name: "Usage", value: commands.get(args[0]).usage }
+                    {
+                        name: "Usage",
+                        value: `\`${prefix}${commands.get(args[0]).name} ${
+                            commands.get(args[0]).usage
+                        }\``,
+                    }
                 );
 
             message.channel.send(embed);

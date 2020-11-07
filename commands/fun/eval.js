@@ -1,6 +1,7 @@
 module.exports = {
     name: "eval",
     description: "Evaluates JavaScript code",
+    usage: "<code>",
     args: true,
     category: "fun",
     execute: async (message, args) => {

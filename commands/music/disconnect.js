@@ -1,6 +1,7 @@
 module.exports = {
     name: "disconnect",
     description: "Disconnects from the connected voice channel",
+    usage: "",
     args: false,
     category: "music",
     execute: async (message, args) => {

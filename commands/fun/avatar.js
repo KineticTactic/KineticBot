@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 module.exports = {
     name: "avatar",
     description: "Returns the avatar of the user",
+    usage: "(user)",
     args: false,
     category: "fun",
     execute(message, args) {

@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 module.exports = {
     name: "dice",
     description: "Rolls a dice and returns the result",
+    usage: "",
     args: false,
     category: "fun",
     execute(message, args) {

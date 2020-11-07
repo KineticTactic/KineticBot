@@ -1,6 +1,7 @@
 module.exports = {
     name: "pause",
     description: "Pauses the currently playing track",
+    usage: "",
     args: false,
     category: "music",
     execute: async (message, args) => {

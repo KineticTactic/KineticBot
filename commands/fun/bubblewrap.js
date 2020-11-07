@@ -1,6 +1,7 @@
 module.exports = {
     name: "bubblewrap",
     description: "Bubble Wrap!",
+    usage: "(size)",
     args: false,
     category: "fun",
     execute(message, args) {

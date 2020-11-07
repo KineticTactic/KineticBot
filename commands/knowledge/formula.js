@@ -3,6 +3,7 @@ const formulas = require("../../data/formulas.json");
 module.exports = {
     name: "formula",
     description: "Returns the formula of the specified theory",
+    usage: "<theory>",
     args: true,
     category: "knowledge",
     execute(message, args) {

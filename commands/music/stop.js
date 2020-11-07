@@ -1,6 +1,7 @@
 module.exports = {
     name: "stop",
     description: "Stops playing music",
+    usage: "",
     args: false,
     category: "music",
     execute: async (message, args) => {

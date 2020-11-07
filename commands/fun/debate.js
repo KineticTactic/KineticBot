@@ -3,6 +3,7 @@ const debate = require("../../data/debate.json");
 module.exports = {
     name: "debate",
     description: "Returns a random debate topic",
+    usage: "",
     args: false,
     category: "fun",
     execute(message, args) {

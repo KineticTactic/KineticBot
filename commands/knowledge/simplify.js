@@ -3,6 +3,7 @@ const math = require("mathjs");
 module.exports = {
     name: "simplify",
     description: "Simplifies a mathematical expression",
+    usage: "<expression>",
     args: true,
     category: "knowledge",
     execute(message, args) {

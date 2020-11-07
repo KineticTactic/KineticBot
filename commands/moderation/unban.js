@@ -1,6 +1,7 @@
 module.exports = {
     name: "unban",
     description: "Unbans the user",
+    usage: "<id>",
     args: true,
     category: "moderation",
     execute(message, args) {

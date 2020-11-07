@@ -1,6 +1,7 @@
 module.exports = {
     name: "kick",
     description: "Kicks the mentioned user",
+    usage: "<user>",
     args: true,
     category: "moderation",
     execute(message, args) {

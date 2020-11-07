@@ -1,6 +1,7 @@
 module.exports = {
     name: "prune",
     description: "Removes the specified no. messages",
+    usage: "<numberOfMessages>",
     args: true,
     category: "utility",
     execute(message, args) {

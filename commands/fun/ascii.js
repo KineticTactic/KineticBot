@@ -3,6 +3,7 @@ const figlet = require("figlet");
 module.exports = {
     name: "ascii",
     description: "Converts a string of text into ASCII art",
+    usage: "<text>",
     args: true,
     category: "fun",
     execute(message, args) {

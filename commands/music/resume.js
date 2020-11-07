@@ -1,6 +1,7 @@
 module.exports = {
     name: "resume",
     description: "Resumes the paused track",
+    usage: "",
     args: false,
     category: "music",
     execute: async (message, args) => {

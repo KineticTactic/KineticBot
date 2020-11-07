@@ -1,6 +1,7 @@
 module.exports = {
     name: "rank",
     description: "Displays the rank of the user",
+    usage: "(user)",
     args: false,
     database: true,
     category: "fun",

@@ -1,6 +1,7 @@
 module.exports = {
     name: "channels",
     description: "Returns the number of channels (excluding categories)",
+    usage: "",
     args: false,
     category: "utility",
     execute(message, args) {

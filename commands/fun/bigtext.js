@@ -1,6 +1,7 @@
 module.exports = {
     name: "bigtext",
     description: "Returns a bigger 'emojified' version of the string",
+    usage: "<text>",
     args: true,
     category: "fun",
     execute(message, args) {

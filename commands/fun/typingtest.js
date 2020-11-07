@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 module.exports = {
     name: "typingtest",
     description: "Typing test!",
+    usage: "",
     args: false,
     category: "utility",
     execute(message, args) {

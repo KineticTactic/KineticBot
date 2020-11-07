@@ -5,6 +5,7 @@ const elements = require("../../data/elements.json")["elements"];
 module.exports = {
     name: "element",
     description: "Returns information about the specified element",
+    usage: "element",
     args: true,
     category: "knowledge",
     execute(message, args) {
