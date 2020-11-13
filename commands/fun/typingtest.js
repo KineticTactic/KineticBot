@@ -23,10 +23,7 @@ module.exports = {
             if (message.content.toLowerCase() === text.toLowerCase()) {
                 const timeTaken = (Date.now() - startTime) / 1000;
                 const wpm =
-                    Math.round(
-                        (text.length / 5 / (timeTaken / 60) + Number.EPSILON) *
-                            100
-                    ) / 100;
+                    Math.round((text.length / 5 / (timeTaken / 60) + Number.EPSILON) * 100) / 100;
                 message.channel.send(
                     `Well Done! It took you ${timeTaken} seconds. Your typing speed is ${wpm} WPM.`
                 );

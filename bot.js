@@ -23,17 +23,9 @@ for (const file of commandFiles) {
 client.once("ready", () => {
     console.log("Ready!");
 
-    let statuses = [
-        "Yoooooooooooooooooo",
-        "Quantum Mechanics",
-        "General Relativity",
-        "nothing",
-    ];
+    let statuses = ["Yoooooooooooooooooo", "Quantum Mechanics", "General Relativity", "nothing"];
     setInterval(
-        () =>
-            client.user.setActivity(
-                statuses[Math.floor(Math.random() * statuses.length)]
-            ),
+        () => client.user.setActivity(statuses[Math.floor(Math.random() * statuses.length)]),
         10000
     );
 });
@@ -42,7 +34,7 @@ client.on("message", (message) => {
     if (message.author.bot) return;
     //client.emit("guildMemberAdd", message.member);
 
-    handleRank(message, database);
+    if (!message.guild.id === "775202092880494613") handleRank(message, database);
 
     if (message.content.startsWith("~")) {
         const args = message.content.slice(1).trim().split(/ +/);
@@ -58,16 +50,12 @@ client.on("message", (message) => {
                 return;
             } catch (error) {
                 console.error(error);
-                message.reply(
-                    "There was an error trying to execute that command!"
-                );
+                message.reply("There was an error trying to execute that command!");
             }
         }
 
         if (command.args && !args.length) {
-            return message.channel.send(
-                `You didn't provide any arguments, ${message.author}!`
-            );
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
 
         try {
@@ -82,9 +70,7 @@ client.on("message", (message) => {
 
 client.on("guildMemberAdd", async (member) => {
     console.log("YOOOOO");
-    const channel = member.guild.channels.cache.find(
-        (ch) => ch.name === "general"
-    );
+    const channel = member.guild.channels.cache.find((ch) => ch.name === "general");
     if (!channel) return;
     console.log("TOOOOO");
 
@@ -106,15 +92,10 @@ client.on("guildMemberAdd", async (member) => {
     ctx.closePath();
     ctx.clip();
 
-    const avatar = await Canvas.loadImage(
-        member.user.displayAvatarURL({ format: "jpg" })
-    );
+    const avatar = await Canvas.loadImage(member.user.displayAvatarURL({ format: "jpg" }));
     ctx.drawImage(avatar, 150, 270, 540, 540);
 
-    const attachment = new Discord.MessageAttachment(
-        canvas.toBuffer(),
-        "welcome-image.png"
-    );
+    const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "welcome-image.png");
 
     channel.send(`Welcome to the server!`, attachment);
 });
