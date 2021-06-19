@@ -14,6 +14,7 @@ module.exports = {
         let cmds = commands.map((command) => [command.name, command.category]);
         if (args.length === 0) {
             let fun = getCommandsInCategory(cmds, "fun");
+            let cubing = getCommandsInCategory(cmds, "cubing");
             let knowledge = getCommandsInCategory(cmds, "knowledge");
             let music = getCommandsInCategory(cmds, "music");
             let moderation = getCommandsInCategory(cmds, "moderation");
@@ -27,6 +28,7 @@ module.exports = {
                 )
                 .addFields(
                     { name: "Fun", value: fun },
+                    { name: "Cubing", value: cubing },
                     { name: "Knowledge", value: knowledge },
                     { name: "Music", value: music },
                     { name: "Moderation", value: moderation },

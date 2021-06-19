@@ -77,7 +77,7 @@ function drawBoard(canvas, board) {
         for (let j = 0; j < 3; j++) {
             if (board[i + j * 3] === X) {
                 drawX(ctx, (canvas.width / 6) * (i * 2 + 1), (canvas.height / 6) * (j * 2 + 1));
-            } else if (board[i + j * 3] === Y) {
+            } else if (board[i + j * 3] === O) {
                 drawO(ctx, (canvas.width / 6) * (i * 2 + 1), (canvas.height / 6) * (j * 2 + 1));
             } else {
                 ctx.fillText(
